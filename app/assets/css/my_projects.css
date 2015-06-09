@@ -1,0 +1,104 @@
+.projects_area {
+	background-color: #EFF3F7;
+	width: 650px;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	height: 850px;
+	display: inline-block;
+}
+
+.projects_header {
+	font-size: 27px;
+	color: #3BA8C0;
+	font-weight: normal;
+	border-bottom: 2px solid #3BA8C0;
+	padding: 13px 23px 12px 21px;
+	margin: 0px 0px 32px;
+	display: table;
+}
+
+.project {
+	width: 215px;
+	height: 272px;
+	overflow: hidden;
+	margin: 0;
+	float: left;
+	
+}
+
+.image_project {
+	width: 188px;
+	height: 134px;
+	border: 2px solid #3BA8C0;
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 0px 0px 4px 15px;
+	float: left;
+}
+
+.img {
+	width: 100%;
+}
+
+.name_project {
+	position: relative;
+	padding: 0px;
+	left: 80px;
+	color: #3BA8C0;
+}
+
+.description_project {
+	position: relative;
+	width: 180px;
+	left: 60px;
+}
+
+.add_project {
+	width: 188px;
+	height: 134px;
+	border: 2px solid #3BA8C0;
+	border-style: dashed;
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 0px 0px 4px 15px;
+	float: left;
+}
+
+.add_project:hover {
+	padding: .5px;
+	transition-duration: 0.3s;
+	transition-property: top, right, bottom, left;
+	border: 6px solid #E1E1E1;
+	position: absolute;
+	content: "";
+}
+
+.add_area {
+	width: 188px;
+	height: 134px;
+	display: inline-block;
+}
+
+.add_area_inside {
+	display: inline-block;
+	position: relative;
+	width: 130px;
+	height: 100px;
+	margin-left: 29px;
+	margin-top: 18px;
+}
+
+.add_area_image {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background: url('../img/sprite-ico.png') no-repeat scroll;
+	background-position: -308px -6px;
+	margin-left: 45px;
+	margin-top: 8px;
+}
+
+.add_area_text {
+	font-style: normal;
+	color: #3BA8C0;
+}

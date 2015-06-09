@@ -1,0 +1,79 @@
+.auth_form {
+	display: block;
+	width: 511px;
+	heght: 800px; 
+	background: none repeat scroll 0% 0% #EFF3F7;
+	box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+	text-align: center;
+	border-radius: 4px;
+	margin: 0px auto 35px;
+	height: 500px;
+}
+
+.auth_form:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header_form {
+	height: 92px;
+	border-width: 15px;
+	font-size: 2.5em;
+	line-height: 92px;
+	margin: 0px auto 25px;
+	
+	display: block;
+	background-color: #48CBE8;
+	border-bottom: 15px solid #67DFFA;
+	color: #FFF;
+	padding: 0px 11px 0px 4px;
+	text-align: center;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.block_login {
+	margin: 0px auto 30px;
+	height: 100px;
+}
+
+label {
+	font-weight: 300;
+	font-size: 2.25em;
+	color: #959AA8;
+}
+
+input {
+	width: 404px;
+	height: 60px;
+	line-height: 60px;
+	padding: 0px 10px;
+	border: 1px solid #48CBE8;
+	border-radius: 4px;
+	background: none repeat scroll 0% 0% #FBFCFD;
+	font-size: 0.813em;
+	outline: 0px none;
+	color: #48CBE8;
+	margin: 0px;	
+}
+
+.authorization_button {
+	margin: 0px 0px 25px;
+	text-align: center;
+	height: 40px;
+	position: relative;
+	padding-top: 40px;
+}
+
+.sent_button {
+	width: 226px;
+	height: 51px;
+	font-size: 2.25em;
+	color: #FFF;
+	background: none repeat scroll 0% 0% #48CBE8;
+	border-radius: 5px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #48CBE8 #48CBE8 #3BA8C0;
+	
+}
