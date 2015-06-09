@@ -1,0 +1,29 @@
+.form_area {
+	height: 800px;
+	background-color: #eff3f7;
+	
+}
+
+.title_top {
+	padding: 43px 26px 36px 18px;
+  	margin: 0 0 45px;
+
+  	font-size: 1.688em;
+  	line-height: 1.5;
+  	text-align: center;
+  	border-width: 19px;
+  	float: none;
+    color: #fff;
+
+	font-weight: 300;
+	background: #48cbe8;
+    display: block;
+    border-radius: 4px 4px 0 0;
+  	border-bottom: 16px solid #67dffa;
+}
+
+.title_top:after {
+	content: '';
+  	display: table;
+  	clear: both;
+}
