@@ -36,13 +36,50 @@
 			<h1 class="title_top">
 			У вас интересный проект? Напишите мне
 			</h1>
-			<form action="#" class="feedback" role="form" method="post">
-			<div class="close_error" style="display: none">
+				<form action="#" class="feedback" role="form" method="post">
+			<div class="error">
 			<h2>Ошибка!</h2>
 			<p></p>
 			</div>
 			<input name="feedback_frm" type="hidden" value="1">
-			<div class="form_in"></div>	
+				<div class="form_input_block">
+					<label for="feedback_name">
+						Имя
+					</label>
+					<input id="feedback_name" class="small_input" type="text" name="name" placeholder="Как к Вам обращаться"></input>
+				</div>
+				<div class="form_input_block">
+					<label for="feedback_name">
+						Email
+					</label>
+					<input id="feedback_name" class="small_input" type="text" name="name" placeholder="Куда мне писать"></input>
+				</div>	
+				<div class="clear"></div>
+				<div class="form_textarea_block">
+					<label for="feedback_messege">
+						Сообщение
+					</label>
+					<textarea id="feedback_messege" class="big_textarea" name="text" placeholder="Коротко в чем суть"></textarea>
+				</div>
+				<div class="form_textarea_block form_captcha_block_outher">
+					<label for="feedback_captcha">
+					Введите код, указанный на картинке
+					</label>
+					<div class="form_captcha_block">
+						<div class="form_captcha_code">
+							<img alt="" src=""></img>
+						</div>
+						<div class="form_captcha_input">	
+							<input id="feedback_captcha" class="form_captcha_input_window" type="text" data="right" name="captcha" placeholder="Введите код"></input>
+						</div>
+					</div>
+				</div>
+				<div class="btn_block">
+					<button class="send_btn" type="submit">
+					Отправить
+					</button>
+					<input class="clear_btn" type="reset" value="Сбросить"></input>
+				</div>
 			</form>
 
 		</article>
