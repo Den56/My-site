@@ -12,23 +12,44 @@ body {
 	height: 100%;
 }
 header {
-	height: 100px;
-	min-width: 960px;
+	height: 119px;
 	position: relative;
 	margin-bottom: 39px;
 }
+
+.container_header {
+	max-width: 1200px;
+  	min-width: 960px;
+  	height: 100%;
+  	margin: 0 auto;
+  	position: relative;
+}
 .logo {
+	top: 27px;	
 	position: absolute;
-	left: 80px;
+	left: 0;
 }
 .social {
 	position: absolute;
-	right: 90px;
+	right: 0;
+	top: 36px;
+	margin: 0;
+  	padding: 0;
+  	min-width: 260px;
+}
+
+.social_item {
+	margin-left: 0;
+	list-style: none;
+  	display: inline-block;
+  	height: 47px;
+
 }
 .sprite-vk {
     background-image: url(../img/sprite-ico.png);
     width: 47px;
     height: 47px;
+    text-indent: -9999px;
     background-position: -1200px 0px;
     display: inline-block;
 }
@@ -43,6 +64,7 @@ header {
 	background-image: url(../img/sprite-ico.png);
     width: 47px;
     height: 47px;
+    text-indent: -9999px;
     background-position: -1270px 0px;
     display: inline-block;
     margin-left: 20px;
@@ -59,6 +81,7 @@ header {
 	background-image: url(../img/sprite-ico.png);
     width: 47px;
     height: 47px;
+    text-indent: -9999px;
     background-position: -141px -0px;
     display: inline-block;
     margin-left: 20px;
@@ -75,6 +98,7 @@ header {
 	background-image: url(../img/sprite-ico.png);
     width: 47px;
     height: 47px;
+    text-indent: -9999px;
     background-position: -812px 0px;
     display: inline-block;
     margin-left: 20px;
@@ -119,48 +143,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
 	width: 960px;
 	margin: auto;
 }
-.navigation {
-	margin-bottom: 15px;
-	width: 250px;
-	height: 219px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	display: inline-block;
-	overflow: hidden;
-}
-.nav_item--selected {
-	font-size: 23px;
-	color: #fff;
-	text-decoration: none;
-	display: block;
-	background-color: #3ba8c0;
-	padding: 19px 29px;
-}
-.nav_item {
-	font-size: 21px;
-	color: #959aa8;
-	text-decoration: none;
-	display: block;
-	position: relative;
-	padding: 19px 29px;
-}
-.nav_item:hover {
-	font-size: 21px;
-	color: #3ba8c0;
-	text-decoration: none;
-	display: block;
-	padding: 19px 29px;
-}
-.nav_item:after {
-   	width: 230px;
-    height: 2px;
-    background: #3ba8c0;
-   	bottom: 0;
-    left: 10px;
-    display: block;
-    position: absolute;
-}
+
 .contacts {
 	color: #fff;
 	font-size: 17px;
@@ -252,6 +235,7 @@ background: -o-linear-gradient(left, #e7eff3 0%, #1d667a 50%, #e7eff3 100%);
 background: linear-gradient(to right, #e7eff3 0%, #1d667a 50%, #e7eff3 100%); 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', endColorstr='#e7eff3',GradientType=1 );
 }
+
 .footer-content {
 	width: 960px;
 	display: inline-block;
@@ -260,34 +244,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
 	vertical-align: middle;
 	line-height: 1.5;
 }
+
+.lock{
+	position: relative;
+  	top: 6px;
+  	left: 20px;
+}
+
 .login {
 	background-image: url(../img/sprite-ico.png);
-    width: 20px;
+    width: 0px;
     height: 32px;
     float: left;
     background-position: -1177px -118px;
     margin-left: 40px;
+
+    display: block;
+  	font-family: 'fira_sansbook';
+  	font-size: 16px;
+  	line-height: 2.2;
+  	color: #4a545d;
+  	text-decoration: none;
+  	padding-left: 24px;
 }
 .login:hover {
 	background: url(../img/sprite-ico.png);
-    width: 20px;
+    width: 0px;
     height: 32px;
     float: left;
     margin-left:40px;
+    text-decoration: underline;
 	background-position: -1135px -118px;
  }
 .copyright {
-	font-family: firasans_l;
-	font-size: 13px;
-	float: right;
-	display: inline-block;
-	width: 650px;
 	line-height: 32px;
+	margin: 0 180px;
+  	padding-top: 7px;
+  	text-align: center;
+  	font-size: 16px;
+  	font-family: 'fira_sanslight';
+  	color: #4a545d;
 }
-
-
-
-
 
 .big {
 	min-height: 100%;
@@ -303,23 +300,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
 
 
 .footer {
-	height: 100px;
-	margin-top: -77px;
-	min-width: 960px;
+	height: 80px;
+	margin-top: -80px;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 77px;	
-}
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    clear: both;
-    display: inline-block;
-    overflow: hidden;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix { 
-	zoom: 1; 
 }

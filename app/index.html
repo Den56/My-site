@@ -18,16 +18,24 @@
 <![endif]-->
 <div class="big">
 <header>
-	<div class="header-wrapper clearfix">
-		<div class="logo">
-		<a href="http://dgilmanov.ru/"><img src="assets/img/logo.png" alt="LoftBlog Logo"></a>
-		</div>
-		<div class="social">
-		<a class="sprite-vk" href="http://vk.com/d.gilmanov" target="_blank"></a>
-		<a class="sprite-twitter" href="https://twitter.com/" target="_blank"></a>
-		<a class="sprite-facebook" href="https://www.facebook.com/gilmanov.denis" target="_blank"></a>
-		<a class="sprite-git" href="https://github.com/Den56" target="_blank"></a>
-		</div>
+	<div class="container_header">
+		<a href="http://dgilmanov.ru/" class="logo">
+			<img src="assets/img/logo.png" alt="LoftBlog Logo">
+		</a>
+		<ul class="social">
+		<li class="social_item">
+			<a class="sprite-vk" href="http://vk.com/d.gilmanov" target="_blank">Вконтакте</a>
+		</li>
+		<li class="social_item">
+			<a class="sprite-twitter" href="https://twitter.com/" target="_blank">Twitter</a>
+		</li>
+		<li class="social_item">	
+			<a class="sprite-facebook" href="https://www.facebook.com/gilmanov.denis" target="_blank">facebook</a>
+		</li>
+		<li class="social_item">
+			<a class="sprite-git" href="https://github.com/Den56" target="_blank">Git</a>
+		</li>
+		</ul>
 	</div>
 </header>
 <div class="page">
@@ -77,11 +85,19 @@
 		</article>
 	</section>
 	<aside class"aside">
-		<div class="navigation">
-		<a href="index.html" class="nav_item--selected">Обо мне</a>
-		<a href="my_projects.html" class="nav_item clearfix">Мои работы</a>
-		<a href="#" class="nav_item">Связаться со мной</a>
-		</div>
+		<nav class="navigation">
+		<ul class="navigation-list">
+		<li>
+			<a href="index.html" class="nav_item--selected">Обо мне</a>
+		</li>
+		<li>
+			<a href="my_projects.html" class="nav_item clearfix">Мои работы</a>
+		</li>
+		<li>
+			<a href="contact_me.html" class="nav_item">Связаться со мной</a>
+		</li>
+		</ul>
+		</nav>
 		<div class="contacts">
 			<div class="contacts_header">Контакты</div>
 				<ul class="contacts_items">
@@ -89,12 +105,15 @@
     				<li class="contacts_item-phone"><a class="contacts_item-phone-icon" href="tel:+9153339417"></a>+9153339417</li>
     				<li class="contacts_item-skype"><a class="contacts_item-skype-icon" href="skype:denis-gilmanov"></a>denis-gilmanov</li>
 				</ul>
-		</div>
+		</nav>
 	</aside>
 </div>
 </div>
 <footer class="footer">
-	<div class="footer-content"><a class="login" href="#"></a>
+	<div class="footer-content">
+		<div class="lock">
+		<a class="login" href="authorization.html">Войти</a>
+		</div>
 		<div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 	</div>
 </footer>
