@@ -62,6 +62,111 @@
 }
 /* Navigation*/
 
+/*Стили окна проекта */
+.project-wrapper {
+	margin: 0 20px;	
+}
+
+.project_list {
+	padding: 0;
+    margin: 0 0 0 -25px;
+}
+
+.projects-item {
+	width: 183px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    margin-bottom: 38px;
+    margin-left: 25px;
+}
+
+.hover-img {
+	width: 100%;
+    height: 129px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+}
+
+.project-img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #3ba8c0;
+  border-radius: 4px;
+}
+
+.zoom-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  text-align: center;
+  -webkit-transform: scale(0);
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.zoom-link {
+  font-family: 'fira_sansbook';
+  font-size: 12px;
+  border: solid 3px #eff3f7;
+  color: #eff3f7;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0 4px;
+}
+
+.project-link {
+  color: #3ba8c0;
+  font-family: 'fira_sanslight_italic';
+  font-size: 13px;
+  text-decoration: none;		
+}
+
+.project-desc{
+  font-size: 15px;
+  margin: 5px 0;
+  line-height: 1.2;
+}
+
+/*Стили окна проекта */
+
+/*Стили окна добавления проекта */
+
+.projects-item {
+	width: 183px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    margin-bottom: 38px;
+    margin-left: 25px;
+}
+
+.add-new-item {
+	border: dashed 1px #3ba8c0;
+    border-radius: 4px;
+    height: 128px;
+    text-decoration: none;
+}
+
+.add-new-link {
+	background: url('../img/add-new.png') center 33px no-repeat;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: #3ba8c0;
+    font-size: 13px;
+}
+
+.add-new-text {
+	position: absolute;
+    padding-top: 76px;
+    text-align: center;
+    width: 100%;
+}
+/*Стили окна добавления проекта */
+
 .projects_area {
 	background-color: #EFF3F7;
 	width: 650px;
@@ -167,48 +272,99 @@
 	color: #3BA8C0;
 }
 
-.modal {
-	overflow:hidden;
-	width:362px;
-	border-radius:4px;
-	background:#eff3f7
+/*PopUp*/
+
+.background_popup {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.7;
+	z-index: 9998;
+	cursor: pointer;
+	background-color: rgb(0, 0, 0);
+	display: none;
+
 }
 
-.modal-add-project {
+.popup {
 	left: 770.5px;
   	position: absolute;
-    top: 370px;
+    top: 250px;
     z-index: 9999;
-    opacity: 0;
- 
+    opacity: 1;
+    overflow:hidden;
+	width:362px;
+	border-radius:4px;
+	background:#eff3f7;
+	display: none;
 }
 
-.modal_title {
+.popup_header {
+	margin-bottom: 8px;
+    background-color: #48cbe8;
+    border-bottom: 9px solid #67dffa;
+}
+.popup_header_name {
 	font-family: fira_sansregular;
-  	font-size: 25px;
-  	font-weight: 400;
-  	line-height: 50px;
-	height: 50px;
-	margin: 0;
-	padding: 0 35px 0 13px;
-	color: #fff;
-	border-bottom: 9px solid #67dffa;
-	background: #48cbe8;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 15px 1px;
+    display: inline-block;
+    height: 39px;
 }
 
-.modal__body {
-  padding: 16px 21px 8px;
-  background: #eff3f7;
+.popup_header_close_button {
+	float: right;
+	width: 25px;
+	height: 25px;
+	background: url(../img/close-popup.png);
+	padding: 0;
+	margin: 10px;
+	border: none;
+	outline: none;
+} 
+
+.popup_form {
+	padding: 0px 21px;
+    background: #eff3f7;
+    margin: 0;
 }
 
-.add-project__label {
-  font-family: fira_sansregular;
-  font-size: 17px;
+
+.popup_list {
+	margin-bottom: 8px;
+    position: relative;
+}
+
+.upload {
+	display: block;
+	width: 52px;
+	height: 41px;
+	background: url(../img/upload-file.png) 10px 7px no-repeat;
+	background-color: #48cbe8;
+	border-radius: 0 4px 4px 0;
+    position: absolute;
+    right: 0;
+}
+
+.upload_button {
+	border: 0;
+  	clip: rect(0 0 0 0);
+  	height: 1px;
+  	margin: -1px;
+  	overflow: hidden;
+  	padding: 0;
+  	position: absolute;
+  	width: 1px;
 }
 
 .label {
-  font-size: 19px;
-  color: #959AA8;
+	font-family: fira_sansregular;
+  	font-size: 17px;
+  	font-size: 19px;
+  	color: #959AA8;
 }
 
 .input {
@@ -218,7 +374,7 @@
 
   background: #fff;
   font-size: 13px;
-  width: 100%;
+  width: 306px;
   padding: 0 10px;
   color: #48cbe8;
   outline: 0;
@@ -232,39 +388,26 @@
   margin: 0;
 }
 
-.add-project__image {
-  position: relative;
-}
-
-.input-file {
-  display: inline-block;
-  cursor: pointer;
-  line-height: 41px;
-
-  background: #fff;
+.popup_list_input {
+  height: 37px;
+  border: 1px solid #67dffa;
+  border-radius: 4px;
+  background-color: #fbfcfd;
+  width: 311px;
+  padding-left: 7px;
   font-size: 13px;
-  width: 100%;
-  padding: 0 10px;
-  color: #48cbe8;
-  outline: 0;
-
-  margin-bottom: 16px;
-
-  border: 1px solid #48cbe8;
-  border-radius: 5px;
-}
-
-.add-project__description {
-  height: 111px;
+  font-family: fira_sanslight;
+  outline: none;
 }
 
 .textarea {
+  height: 111px;
   padding: 10px;
   resize: none;
 
   background: #fff;
   font-size: 13px;
-  width: 100%;
+  width: 306px;
   padding: 0 10px;
   color: #48cbe8;
   outline: 0;
@@ -279,23 +422,34 @@
   overflow: auto;
 }
 
-.text-center {
-  text-align: center;
-}
 
-.button-submit {
-  border-bottom: 2px solid #3ba8c0;
-  background: #48cbe8;
-}
 
 .button {
-  font-family: firasans_book;
-  font-size: 19px;
-  line-height: 28px;
-  padding: 0 22px;
-  color: #fff;
-
-  margin-bottom: 16px;
-  border: 1px solid #48cbe8;
+  width: 140px;
+  height: 31px;
   border-radius: 5px;
+  background-color: #48cbe8;
+  margin: 0 auto 22px;
+  color: #fff;
+  box-shadow: 0 3px #3ba8c0;
+  display: block;
+  border: none;
+  position: relative;
+  outline: none;
+}	
+
+.button:hover {
+  width: 137px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #48cbe8;
+  margin: 0 auto 22px;
+  color: #fff;
+  box-shadow: 0 0px #3ba8c0;
+  display: block;
+  border: none;
+  position: relative;
+  outline: none;
 }
+
+/*PopUp*/

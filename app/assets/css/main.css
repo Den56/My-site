@@ -130,7 +130,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
 .main_inf {
 	float: right;
 	width: 650px;
-	min-height: 950px;
+	height: 950px;
 	display: inline-block;
 };
 
