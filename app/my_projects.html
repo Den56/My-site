@@ -108,13 +108,14 @@
 </footer>
 
 <!--PopUp-->
+<div class="all-popup-area"> 
 <div class="background_popup"></div>
 <div class="popup" id="popup1">
 	<div class="popup_header">
 	<div class="popup_header_name">Добавление проекта</div>
 	<button class="popup_header_close_button" type="button"></button>
 	</div>
-		<form action="" class="popup_form">
+		<form action="" class="popup_form" id="add-new-project">
 			<div class="server-message_error"></div>
 			<div class="server-message_success"></div>
 
@@ -143,8 +144,11 @@
             <button type="submit" class="button">Добавить</button>    
         </form>
 </div>
+</div>
 <!--PopUp-->
-<script type="text/javascript" src="assets/js/add_project.js"></script>
 <script src="bower/jquery/dist/jquery.js" type="text/javascript"></script>
+<!--<script src="assets/js/jquery-1.11.3.js" type="text/javascript"></script>-->
+<script src="assets/js/dinbror-bpopup-4e5257d/jquery.bpopup.js" type="text/javascript"></script>
+<script src="assets/js/add_project.js" type="text/javascript"></script>
 </body>
 </html>

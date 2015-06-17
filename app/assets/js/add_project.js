@@ -7,7 +7,7 @@ var addProject = (function (){
 			},
 			_setUpListners = function (){
 				$('#add-new-item').on('click', _showModal); // открыть модальное окно
-				$('#add-new-item').on('submit', _addProject); // добавление проекта
+				$('#add-new-project').on('submit', _addProject); // добавление проекта
 			},
 			_showModal = function (){
       	console.log('Вызов модального окна');
